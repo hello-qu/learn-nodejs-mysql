@@ -34,7 +34,9 @@ connection.query('select * from mysql',function(err,res,filds){
         console.log('query - error')
         return;
     }
-    console.log('query result:'+res[1].pwd);
+    for(var i = 0;i<res.length;i++){
+        console.log('query result:'+res[i].pwd);
+    }
 })
 
 
